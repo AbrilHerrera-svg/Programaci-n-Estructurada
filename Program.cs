@@ -63,7 +63,7 @@
                     }
 
                     Console.Write("Ingresa la edad de la persona " + i + ":");
-                    while (!int.TryParse(Console.ReadLine(), out edadPersona) && edadPersona < 0)
+                    while (!int.TryParse(Console.ReadLine(), out edadPersona) || edadPersona < 0)
                     {
                         Console.WriteLine("Edad inválida. Ingresa un número entero no negativo.");
                         Console.Write("Ingresa la edad de la persona " + i + ":");
@@ -123,4 +123,5 @@
         }
     }
 }
+
 
