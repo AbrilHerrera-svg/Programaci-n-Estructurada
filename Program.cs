@@ -1,4 +1,6 @@
-﻿namespace ProgramacionU2_E1
+using System;
+using System.Collections.Generic;
+namespace ProgramacionU2_E1
 {
     internal class Program
     {
@@ -123,5 +125,6 @@
         }
     }
 }
+
 
 
