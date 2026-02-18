@@ -9,7 +9,7 @@
             int edadPersona;
 
             Console.Write("Ingresa la cantidad de personas a clasificar: ");
-            while (!int.TryParse(Console.ReadLine(), out cantidadPersonas) && cantidadPersonas < 1)
+            while (!int.TryParse(Console.ReadLine(), out cantidadPersonas) || cantidadPersonas < 1)
             {
                 Console.WriteLine("Valor inválido. Debes ingresar un número entero mayor o igual a 1.");
                 Console.Write("Ingresa la cantidad de personas a clasificar: ");
@@ -28,7 +28,7 @@
                 }
 
                 Console.Write("Ingresa la edad de la persona: ");
-                while (!int.TryParse(Console.ReadLine(), out edadPersona) && edadPersona < 0)
+                while (!int.TryParse(Console.ReadLine(), out edadPersona) || edadPersona < 0)
                 {
                     Console.WriteLine("Edad inválida. Ingresa un número entero no negativo.");
                     Console.Write("Ingresa la edad de la persona: ");
@@ -123,3 +123,4 @@
         }
     }
 }
+
